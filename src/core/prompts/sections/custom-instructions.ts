@@ -23,7 +23,7 @@ export async function loadRuleFiles(cwd: string): Promise<string> {
 	for (const file of ruleFiles) {
 		const content = await safeReadFile(path.join(cwd, file))
 		if (content) {
-			combinedRules += `\n# Rules from ${file}:\n${content}\n`
+			combinedRules += `\n### Rules from ${file}:\n${content}\n`
 		}
 	}
 
@@ -90,6 +90,6 @@ export async function addCustomInstructions(
 	const joinedSections = sections.join("\n\n")
 
 	return joinedSections
-		? `\n====\n\nUSER'S CUSTOM INSTRUCTIONS\n\nFollow these additional instructions while respecting TOOL USE guidelines:\n\n${joinedSections}`
+		? `\n## USER'S CUSTOM INSTRUCTIONS\n\nFollow these additional instructions while respecting TOOL USE guidelines:\n\n${joinedSections}`
 		: ""
 }

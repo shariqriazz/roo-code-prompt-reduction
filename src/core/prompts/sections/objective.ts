@@ -1,8 +1,5 @@
 export function getObjectiveSection(): string {
-	return `====
-
-OBJECTIVE
-
+	return `## OBJECTIVE
 Complete tasks iteratively through clear steps:
 
 1. Analyze task and set prioritized goals

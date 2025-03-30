@@ -1,14 +1,11 @@
 export function getSharedToolUseSection(): string {
-	return `====
-
-TOOL USE
-
+	return `## TOOL USE
 Use tools step-by-step to accomplish tasks:
 - One tool per message
 - Each tool use informs the next
 - Results come in user responses
 
-# Tool Use Formatting
+### Tool Use Formatting
 
 XML-style format:
 <tool_name>

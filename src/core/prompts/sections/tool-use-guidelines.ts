@@ -1,5 +1,5 @@
 export function getToolUseGuidelinesSection(): string {
-	return `# Tool Use Guidelines
+	return `### Tool Use Guidelines
 
 1. Assess task requirements in <thinking> tags
 2. Select optimal tool for each step

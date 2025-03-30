@@ -47,7 +47,7 @@ export async function getMcpServersSection(
 					.join("\n\n")}`
 			: "(No MCP servers currently connected)"
 
-	const baseSection = `MCP SERVERS
+	const baseSection = `## MCP SERVERS
 
 MCP servers provide additional tools/resources:
 - Local (Stdio-based): Run on user's machine

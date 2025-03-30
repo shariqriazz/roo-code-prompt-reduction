@@ -10,10 +10,7 @@ export function getSystemInfoSection(cwd: string, currentMode: Mode, customModes
 	const currentModeName = findModeBySlug(currentMode, customModes)?.name || currentMode
 	const codeModeName = findModeBySlug(defaultModeSlug, customModes)?.name || "Code"
 
-	let details = `====
-
-SYSTEM INFO
-
+	let details = `## SYSTEM INFO
 OS: ${osName()}
 Shell: ${getShell()}
 Home: ${os.homedir().toPosix()}

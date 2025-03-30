@@ -7,10 +7,7 @@ export function getCapabilitiesSection(
 	mcpHub?: McpHub,
 	diffStrategy?: DiffStrategy,
 ): string {
-	return `====
-
-CAPABILITIES
-
+	return `## CAPABILITIES
 - Tools available:
   - CLI command execution
   - File listing/searching
@@ -18,7 +15,7 @@ CAPABILITIES
   - File reading/writing
   - Follow-up questions${supportsComputerUse ? "\n  - Browser interaction" : ""}
 - Initial file structure provided in environment_details
-=======
+---
 - Use list_files to explore (recursive=true for full listing)
 - search_files: Regex searches with context
 - list_code_definition_names: Code structure overview

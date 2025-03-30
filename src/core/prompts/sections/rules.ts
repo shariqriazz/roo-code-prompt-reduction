@@ -57,10 +57,7 @@ export function getRulesSection(
 	diffStrategy?: DiffStrategy,
 	experiments?: Record<string, boolean> | undefined,
 ): string {
-	return `====
-
-RULES
-
+	return `## RULES
 - Base dir: ${cwd.toPosix()} (use relative paths)
 - Cannot cd - specify paths relative to base
 - No ~/$HOME paths

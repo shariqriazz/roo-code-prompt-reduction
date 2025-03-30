@@ -92,7 +92,7 @@ export function getToolDescriptionsForMode(
 		})
 	})
 
-	return `# Tools\n\n${descriptions.filter(Boolean).join("\n\n")}`
+	return descriptions.filter(Boolean).join("\n\n")
 }
 
 // Export individual description functions for backward compatibility
